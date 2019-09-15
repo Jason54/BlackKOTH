@@ -1,0 +1,33 @@
+---
+version: 1
+
+provider: "sqlite3"
+
+debug: false
+
+show_updates: false
+check_updates: false
+download_updates: false
+update_check_url: "https://raw.githubusercontent.com/jackthehack21/koth/master/updates.json"
+
+block_commands: true
+prevent_place: true
+prevent_break: true
+prevent_gamemode_change: true
+keep_inventory: true
+
+auto_start: true
+
+countdown: 30
+countdown_bcast: true
+countdown_bcast_interval: 5
+countdown_bcast_serverwide: false
+
+start_bcast_serverwide: false
+end_bcast_serverwide: false
+
+KingTextParticles: true
+
+nametag_enabled: true
+nametag_format: "{RED}[ {GREEN}KING {RED}]"
+...

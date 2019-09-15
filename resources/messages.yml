@@ -1,0 +1,34 @@
+---
+colour_codes: "All colour codes: {PREFIX} {BLACK} {DARK_BLUE} {DARK_GREEN} {DARK_AQUA} {DARK_RED} {DARK_PURPLE} {GOLD} {GRAY} {DARK_GRAY} {BLUE} {GREEN} {AQUA} {RED} {LIGHT_PURPLE} {YELLOW} {WHITE} {OBFUSCATED} {BOLD} {STRIKETHROUGH} {UNDERLINE} {ITALIC} {RESET}"
+version: 0
+
+general:
+  debug_format: "{GRAY}[KOTH | DEBUG] : {MSG}"
+  provider: "Le fournisseur était réglé sur: {NAME}"
+
+arenas:
+  loaded: "{AMOUNT} Arena (s) chargé (s)."
+  leave_message: "Poussé."
+
+commands:
+  unknown: "{PREFIX}{RED}Commande inconnue, essayez /koth help"
+  no_perms: "{PREFIX}{RED}Vous n'êtes pas autorisé à utiliser cette commande!"
+  in_game: "{PREFIX}{RED}Les commandes ne peuvent être exécutées que dans le jeu."
+  usage: "{PREFIX}{RED}Usage incorrect, {USAGE}"
+  not_exist: "{PREFIX}{RED}L'arène spécifiée n'existe pas."
+  not_while_running: "{PREFIX}{RED}Cette arène est actuellement en cours d'exécution, veuillez d'abord l'arrêter.."
+  not_in_game_leave: "{PREFIX}{RED}Votre pas dans un jeu, alors comment pouvez-vous quitter un jeu ..."
+  in_game_join: "{PREFIX}{RED}Votre actuellement dans un jeu, s'il vous plaît laissez le jeu en utilisant /koth leave rejoindre un autre."
+
+broadcasts:
+  winner: "{PREFIX}{GOLD}{PLAYER} A remporté le jeu dans le {ARENA} Arene !"
+  no_winner: "{PREFIX}{RED}GAME OVER, Personne n'a réussi à prendre la colline et à gagner la partie. Plus de chance la prochaine fois."
+  fallen_king: "{PREFIX}{RED}Le king {AQUA}'{PLAYER}'{RED} est tombé."
+  new_king: "{PREFIX}{GOLD}{PLAYER} {GREEN}A réclamé le trône, combien de temps ça va durer..."
+  player_quit: "{PREFIX}{GOLD}{PLAYER} {AQUA}A quitté le jeu, raison: {RED}{REASON}"
+  player_join: "{PREFIX}{GOLD}{PLAYER} {GREEN}A rejoint le jeu !"
+
+  countdown: "{PREFIX}{GOLD}[{AQUA}{ARENA} | {GOLD}COMPTE À REBOURS] {RED}: {GREEN}{COUNT}"
+  start: "{PREFIX}{GOLD}[{ARENA}] {GREEN}A commencé!"
+  end: "{PREFIX}{GOLD}[{ARENA}] {GREEN}A fini."
+...

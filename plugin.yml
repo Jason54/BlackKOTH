@@ -1,0 +1,57 @@
+---
+name: BlackKOTH
+author: BlackTeam
+version: 1.0.0
+api: [3.2.0]
+main: BlackTeam\BlackKOTH\Main
+description: King of The Hill, un plug-in de mini-jeu par la BlackTeam
+extensions:
+- sqlite3
+commands:
+  koth:
+    description: KOTH commandement général
+    permission: koth.command
+    usage: /koth help
+    permission-message: '[KOTH] Vous n''êtes pas autorisé à utiliser cette commande.'
+permissions:
+  koth:
+    default: false
+    description: Permet l'utilisation de /koth
+    children:
+      koth.command:
+        description: Permet au joueur d'utiliser/koth
+        default: true
+      koth.rem:
+        description: Permet au joueur de supprimer une arène.
+        default: op
+      koth.new:
+        description: Permet au joueur de commencer le processus de création d’une arène.
+        default: op
+      koth.addrewards:
+        description: Permet au joueur d'ajouter des commandes de récompense à une arène.
+        default: op
+      koth.setspawns:
+        description: Permet au joueur de définir des points d'apparition pour une arène.
+        default: op
+      koth.setpos:
+        description: Permet au joueur de définir des points lors de la configuration d'une nouvelle arène.
+        default: op
+      koth.info:
+        description: Affiche plus de détails sur une arène spécifique.
+        default: true
+      koth.list:
+        description: Permet au joueur de voir toutes les arènes et leur statut.
+        default: true
+      koth.join:
+        description: Permet au joueur de rejoindre une partie.
+        default: true
+      koth.leave:
+        description: Permet au joueur de sortir d'une partie.
+        default: true
+      koth.start:
+        description: Permet au joueur de démarrer une arène.
+        default: true
+      koth.forcestart:
+        description: Permet au joueur de forcer le démarrage d'une arène.
+        default: op
+...
