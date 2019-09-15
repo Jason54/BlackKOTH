@@ -1,0 +1,7 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/jason54pe/BlackKOTH
+branches:
+- master
+projects:
+  BlackKOTH:
+    path: ""
+...
